@@ -1,0 +1,15 @@
+{
+  "name": "jiraext",
+  "homepage": "https://github.com/paulwardrip/jiraext",
+  "authors": [
+    "Paul Wardrip <paul.wardrip@turner.com>"
+  ],
+  "description": "jira",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}

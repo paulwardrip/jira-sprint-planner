@@ -1,0 +1,5 @@
+node_modules
+.idea
+view/bower_components
+logs/*
+.DS_Store
