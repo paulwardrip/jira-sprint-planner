@@ -1,0 +1,562 @@
+{
+  "contents": {
+    "completedIssues": [
+      {
+        "id": 62947,
+        "key": "CSCD-91",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "As a developer, I want the WorkOrder system to execute a test lambda upon receipt of an email from any given email address",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-48",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-48",
+          "epicColor": "ghx-label-6",
+          "text": "Core System",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 8
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 8
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63009,
+        "key": "CSCD-94",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "As a type creator, I want to get all messages in the rules engine, so that I can process one or more of them.",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "atsai",
+        "assigneeName": "Tsai, Andrew",
+        "avatarUrl": "http://www.gravatar.com/avatar/eae38257f3e79bdea749ea43b2023be6?d=mm&s=48",
+        "hasCustomUserAvatar": true,
+        "color": "#cc3366",
+        "epic": "CSCD-48",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-48",
+          "epicColor": "ghx-label-6",
+          "text": "Core System",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 8
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 8
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63010,
+        "key": "CSCD-95",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "As a type creator, I want to get all unread messages in the rules engine, so that I can process them.",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-48",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-48",
+          "epicColor": "ghx-label-6",
+          "text": "Core System",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 2
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 2
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63013,
+        "key": "CSCD-98",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "As a type creator, I want send message to record the message in the sent list, so that we have a history",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "atsai",
+        "assigneeName": "Tsai, Andrew",
+        "avatarUrl": "http://www.gravatar.com/avatar/eae38257f3e79bdea749ea43b2023be6?d=mm&s=48",
+        "hasCustomUserAvatar": true,
+        "color": "#cc3366",
+        "epic": "CSCD-48",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-48",
+          "epicColor": "ghx-label-6",
+          "text": "Core System",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 8
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63041,
+        "key": "CSCD-103",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "As a user of Acquired Series workorders, I want the view to reflect the saved information.",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-46",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-46",
+          "epicColor": "ghx-label-2",
+          "text": "Acquisition",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63377,
+        "key": "CSCD-111",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "UI Cleanup #1",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-46",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-46",
+          "epicColor": "ghx-label-2",
+          "text": "Acquisition",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 8
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63378,
+        "key": "CSCD-112",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Copy icon for whole episode",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-46",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-46",
+          "epicColor": "ghx-label-2",
+          "text": "Acquisition",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 3
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63517,
+        "key": "CSCD-124",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Create a shared utility to display conversations",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "assignee": "gbrown",
+        "assigneeName": "Brown, Glenn",
+        "avatarUrl": "http://www.gravatar.com/avatar/3b770c2e5136f795ffb139c8c1a09641?d=mm&s=48",
+        "hasCustomUserAvatar": true,
+        "color": "#cc3366",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 8
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 63559,
+        "key": "CSCD-145",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "[Timebox] Inbound e-mail routing/processing",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-53",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-53",
+          "epicColor": "ghx-label-5",
+          "text": "Email",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 13
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      }
+    ],
+    "issuesNotCompletedInCurrentSprint": [],
+    "puntedIssues": [],
+    "issuesCompletedInAnotherSprint": [],
+    "completedIssuesInitialEstimateSum": {
+      "value": 18,
+      "text": "18.0"
+    },
+    "completedIssuesEstimateSum": {
+      "value": 63,
+      "text": "63.0"
+    },
+    "issuesNotCompletedInitialEstimateSum": {
+      "text": "null"
+    },
+    "issuesNotCompletedEstimateSum": {
+      "text": "null"
+    },
+    "allIssuesEstimateSum": {
+      "value": 63,
+      "text": "63.0"
+    },
+    "puntedIssuesInitialEstimateSum": {
+      "text": "null"
+    },
+    "puntedIssuesEstimateSum": {
+      "text": "null"
+    },
+    "issuesCompletedInAnotherSprintInitialEstimateSum": {
+      "text": "null"
+    },
+    "issuesCompletedInAnotherSprintEstimateSum": {
+      "text": "null"
+    },
+    "issueKeysAddedDuringSprint": {}
+  },
+  "sprint": {
+    "id": 844,
+    "sequence": 844,
+    "name": "Sprint 2 - Conversations",
+    "state": "CLOSED",
+    "linkedPagesCount": 0,
+    "startDate": "30/Jan/17 2:57 PM",
+    "endDate": "10/Feb/17 2:57 PM",
+    "completeDate": "28/Feb/17 11:22 AM",
+    "remoteLinks": [],
+    "daysRemaining": 0
+  },
+  "lastUserToClose": "<a class=\"user-hover\" rel=\"njeanfils\" id=\"_njeanfils\" href=\"/secure/ViewProfile.jspa?name=njeanfils\">Nick Jeanfils</a>",
+  "supportsPages": true
+}

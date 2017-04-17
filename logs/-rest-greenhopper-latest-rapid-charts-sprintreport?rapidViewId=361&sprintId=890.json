@@ -1,0 +1,666 @@
+{
+  "contents": {
+    "completedIssues": [
+      {
+        "id": 66182,
+        "key": "CSCD-439",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Make questions appear in the correct order in acquired series and features info request e-mails",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": true,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 3
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "5",
+        "statusName": "Resolved",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+        "status": {
+          "id": "5",
+          "name": "Resolved",
+          "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/resolved.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      }
+    ],
+    "issuesNotCompletedInCurrentSprint": [
+      {
+        "id": 63859,
+        "key": "CSCD-170",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Users can select Edit Rights for a feature film",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-46",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-46",
+          "epicColor": "ghx-label-2",
+          "text": "Acquisition",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 65367,
+        "key": "CSCD-348",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Switching distributors in options dropdown should clear out additional contacts.",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/bug.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc0000",
+        "epic": "CSCD-46",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-46",
+          "epicColor": "ghx-label-2",
+          "text": "Acquisition",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 3
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 3
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 65375,
+        "key": "CSCD-351",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Clicking Confirm Order packages data and gets it ready to send to Orion",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-46",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-46",
+          "epicColor": "ghx-label-2",
+          "text": "Acquisition",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 1
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 1
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 65376,
+        "key": "CSCD-352",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Build the glue that will tie WO tool and Orion together",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-46",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-46",
+          "epicColor": "ghx-label-2",
+          "text": "Acquisition",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 13
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 13
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "3",
+        "statusName": "Procurement Team In Progress",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "Procurement Team In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 65650,
+        "key": "CSCD-393",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Time Box: User feedback & tweaks",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "3",
+        "statusName": "Procurement Team In Progress",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "Procurement Team In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 65893,
+        "key": "CSCD-426",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Notify users via Slack when a distributor replies to message",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 65949,
+        "key": "CSCD-432",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Work with distributor in Prod and make changes based on feedback",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "epic": "CSCD-86",
+        "epicField": {
+          "id": "customfield_11303",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "CSCD-86",
+          "epicColor": "ghx-label-1",
+          "text": "Obsolete",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 66109,
+        "key": "CSCD-438",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Fix update conflict issue in acquired series and features work order types",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "3",
+        "statusName": "Procurement Team In Progress",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "Procurement Team In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 66183,
+        "key": "CSCD-440",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Fix Uncaught TypeError: Cannot read property 'iso6392Code' of undefined - on sending the email.",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/bug.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc0000",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 3
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 66189,
+        "key": "CSCD-442",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Add release year into the dropdown for titles and put the year into the work order name for features.",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 3
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {}
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "10059",
+        "statusName": "Ready",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/generic.png",
+        "status": {
+          "id": "10059",
+          "name": "Ready",
+          "description": "Is has been scheduled for development work to begin",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/generic.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 66191,
+        "key": "CSCD-443",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "8",
+        "summary": "Change the feature work order type so that step 2 is just a selection of the # of \"Feature Types\" that are being requested.",
+        "typeUrl": "http://atomtickets.turner.com/images/icons/issuetypes/story.png",
+        "priorityUrl": "http://atomtickets.turner.com/images/icons/priorities/major.png",
+        "priorityName": "Medium",
+        "done": false,
+        "hasCustomUserAvatar": false,
+        "color": "#cc3366",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10104",
+          "statFieldValue": {
+            "value": 5
+          }
+        },
+        "trackingStatistic": {
+          "statFieldId": "timeestimate",
+          "statFieldValue": {}
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://atomtickets.turner.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [],
+        "projectId": 15400,
+        "linkedPagesCount": 0
+      }
+    ],
+    "puntedIssues": [],
+    "issuesCompletedInAnotherSprint": [],
+    "completedIssuesInitialEstimateSum": {
+      "text": "null"
+    },
+    "completedIssuesEstimateSum": {
+      "value": 3,
+      "text": "3.0"
+    },
+    "issuesNotCompletedInitialEstimateSum": {
+      "value": 42,
+      "text": "42.0"
+    },
+    "issuesNotCompletedEstimateSum": {
+      "value": 53,
+      "text": "53.0"
+    },
+    "allIssuesEstimateSum": {
+      "value": 56,
+      "text": "56.0"
+    },
+    "puntedIssuesInitialEstimateSum": {
+      "text": "null"
+    },
+    "puntedIssuesEstimateSum": {
+      "text": "null"
+    },
+    "issuesCompletedInAnotherSprintInitialEstimateSum": {
+      "text": "null"
+    },
+    "issuesCompletedInAnotherSprintEstimateSum": {
+      "text": "null"
+    },
+    "issueKeysAddedDuringSprint": {}
+  },
+  "sprint": {
+    "id": 890,
+    "sequence": 890,
+    "name": "Sprint 7 -Feat. & Orion Create",
+    "state": "ACTIVE",
+    "linkedPagesCount": 0,
+    "startDate": "10/Apr/17 3:19 PM",
+    "endDate": "21/Apr/17 3:19 PM",
+    "completeDate": "None",
+    "remoteLinks": [],
+    "daysRemaining": 0
+  },
+  "supportsPages": true
+}

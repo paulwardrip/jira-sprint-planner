@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>JIRA Sprint Hours</title>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="jira.js"></script>
+    <link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="jira.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Exo:300,400" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login row">
+        <div class="col-xs-4 col-xs-offset-4 well">
+            <div class="row">
+                <div class="col-xs-10">Enter your network login info and the rapid view/board number.<br/><br/></div>
+                <div class="col-xs-2 right"><button disabled id="go">Go!</button></div>
+                <div class="col-xs-4">Username</div>
+                <input class="col-xs-8" type="text" id="username" />
+                <div class="col-xs-4">Password</div>
+                <input class="col-xs-8" type="password" id="password" />
+                <div class="col-xs-4">JIRA Rapid View/Board ID</div>
+                <input class="col-xs-8" type="text" id="board" />
+            </div>
+        </div>
+    </div>
+
+    <div class="plan">
+        <div class="row dates">
+            <div class="col-xs-3 datelabel">Start Date</div>
+            <div class="col-xs-3 start"></div>
+            <div class="col-xs-3 datelabel">End Date</div>
+            <div class="col-xs-3 end"></div>
+        </div>
+
+        <div class="people" style="display: none">
+            <div class="row header">
+                <div class="col-xs-1">Name</div>
+                <div class="col-xs-1 daylabel">M</div>
+                <div class="col-xs-1 daylabel">Tu</div>
+                <div class="col-xs-1 daylabel">W</div>
+                <div class="col-xs-1 daylabel">Th</div>
+                <div class="col-xs-1 daylabel">F</div>
+                <div class="col-xs-1 daylabel">M</div>
+                <div class="col-xs-1 daylabel">Tu</div>
+                <div class="col-xs-1 daylabel">W</div>
+                <div class="col-xs-1 daylabel">Th</div>
+                <div class="col-xs-1 daylabel">F</div>
+                <div class="col-xs-1" style="text-align: center"><button id="add-person">Add</button></div>
+            </div>
+            <div class="team"></div>
+            <div class="row">
+                <div class="col-xs-1 col-xs-offset-11 grand-total"></div>
+            </div>
+        </div>
+
+        <div id="current" class="well">
+            <div id="sprint">
+                <div class="row">
+                    <div class="col-xs-8 name"><select id="sprint-selector"><option value="">Select a Sprint</option></select></div>
+                    <div class="col-xs-4">
+                        <div class="col-xs-2 col-label">Points:</div><div class="col-xs-2 points"></div>
+                        <div class="col-xs-2 col-label">Estimate:</div><div class="col-xs-2 hours"></div>
+                        <div class="col-xs-2 col-label">Remain:</div><div class="col-xs-2 remain"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="stories"></div>
+        </div>
+    </div>
+
+    <script type="text/html" id="story-template">
+        <div class="story row">
+            <div class="col-xs-7 name"></div><div class="col-xs-1 status"></div>
+            <div class="col-xs-4">
+                <div class="col-xs-2 col-label">Points:</div><div class="col-xs-2 points"></div>
+                <div class="col-xs-2 col-label">Estimate:</div><div class="col-xs-2 hours"></div>
+                <div class="col-xs-2 col-label">Remain:</div><div class="col-xs-2 remain"></div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/html" id="task-template">
+        <div class="task row">
+            <div class="col-xs-7 name"></div><div class="col-xs-1 status"></div>
+            <div class="col-xs-4">
+                <div class="col-xs-2 col-xs-offset-4 col-label">Estimate:</div><div class="col-xs-2 hours"></div>
+                <div class="col-xs-2 col-label">Remain:</div><div class="col-xs-2 remain"></div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/html" id="person-template">
+        <div class="row person">
+            <div><input class="col-xs-1 name" type="text" /></div>
+            <div><input class="col-xs-1 day mo1" type="text" /></div>
+            <div><input class="col-xs-1 day tu1" type="text" /></div>
+            <div><input class="col-xs-1 day we1" type="text" /></div>
+            <div><input class="col-xs-1 day th1" type="text" /></div>
+            <div><input class="col-xs-1 day fr1" type="text" /></div>
+            <div><input class="col-xs-1 day mo2" type="text" /></div>
+            <div><input class="col-xs-1 day tu2" type="text" /></div>
+            <div><input class="col-xs-1 day we2" type="text" /></div>
+            <div><input class="col-xs-1 day th2" type="text" /></div>
+            <div><input class="col-xs-1 day fr2" type="text" /></div>
+            <div class="col-xs-1 total"></div>
+        </div>
+    </script>
+</body>
+</html>

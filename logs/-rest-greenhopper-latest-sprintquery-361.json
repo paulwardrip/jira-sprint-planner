@@ -1,0 +1,54 @@
+{
+  "sprints": [
+    {
+      "id": 835,
+      "sequence": 835,
+      "name": "Sprint 1 - Req Data/Send Mail",
+      "state": "CLOSED",
+      "linkedPagesCount": 0
+    },
+    {
+      "id": 844,
+      "sequence": 844,
+      "name": "Sprint 2 - Conversations",
+      "state": "CLOSED",
+      "linkedPagesCount": 0
+    },
+    {
+      "id": 856,
+      "sequence": 856,
+      "name": "Sprint 3 - TBD",
+      "state": "CLOSED",
+      "linkedPagesCount": 0
+    },
+    {
+      "id": 867,
+      "sequence": 867,
+      "name": "Sprint 4 - Road to Production",
+      "state": "CLOSED",
+      "linkedPagesCount": 0
+    },
+    {
+      "id": 881,
+      "sequence": 881,
+      "name": "Sprint 5 - Road to Production",
+      "state": "CLOSED",
+      "linkedPagesCount": 0
+    },
+    {
+      "id": 889,
+      "sequence": 889,
+      "name": "Sprint 6 - Feature Films",
+      "state": "CLOSED",
+      "linkedPagesCount": 0
+    },
+    {
+      "id": 890,
+      "sequence": 890,
+      "name": "Sprint 7 -Feat. & Orion Create",
+      "state": "ACTIVE",
+      "linkedPagesCount": 0
+    }
+  ],
+  "rapidViewId": 361
+}

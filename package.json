@@ -1,0 +1,8 @@
+{
+  "name": "jira-extension",
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}

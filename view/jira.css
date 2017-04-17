@@ -1,0 +1,109 @@
+body {
+    background: powderblue;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+.name, .dates {
+    font-family: Raleway, sans-serif;
+}
+
+.points, .hours, .remain, .day, .total, .grand-total {
+    font-family: Exo, sans-serif;
+    text-align: center;
+}
+
+.col-label {
+    text-align: right;
+}
+
+.status {
+    text-align: center;
+}
+
+.daylabel {
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.datelabel {
+    font-weight: 400;
+}
+
+#sprint .name, #sprint .points, #sprint .hours, #sprint .remain, .grand-total {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.story .hours, .story .points, .story .name, .story .remain, .status {
+    font-weight: 400;
+}
+
+.total, .grand-total {
+    background-color: #f0f0f0;
+}
+
+.total {
+    border: 1px solid #e0e0e0;
+    padding-top: 4px;
+    height: 26px
+}
+
+.dates {
+    font-size: 18px;
+    display: none;
+}
+
+.story {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.story .name {
+    padding-left: 25px;
+}
+
+.task .name {
+    padding-left: 50px;
+}
+
+.even {
+    background: #E0E0E0;
+}
+
+.odd {
+    background: #F0F0F0;
+}
+
+#current {
+    background: #FFFFFF;
+}
+
+#current, .people, .dates {
+    margin: 50px
+}
+
+.grand-total {
+    text-align: center;
+}
+
+.person .total {
+    text-align: center;
+}
+
+.login .well {
+    margin-top: 100px;
+}
+
+.plan {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

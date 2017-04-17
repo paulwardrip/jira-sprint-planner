@@ -1,0 +1,438 @@
+{
+  "issues": [
+    {
+      "id": 66109,
+      "name": "Fix update conflict issue in acquired series and features work order types",
+      "key": "CSCD-438",
+      "points": 5,
+      "status": "Resolved",
+      "tasks": [
+        {
+          "id": "66195",
+          "key": "CSCD-445",
+          "name": "Make sure the conflict identification logic in the lambda does a deep comparison",
+          "hours": 6,
+          "status": "Resolved"
+        },
+        {
+          "id": "66196",
+          "key": "CSCD-446",
+          "name": "Final vetting and fixing of hot spots for conflicts",
+          "hours": 6,
+          "status": "Resolved"
+        },
+        {
+          "id": "66194",
+          "key": "CSCD-444",
+          "name": "Make it so that the front end and the rules engine don't concurrently modify recipient lists",
+          "hours": 3,
+          "status": "Resolved"
+        },
+        {
+          "id": "66197",
+          "key": "CSCD-447",
+          "name": "Testing Conflicts",
+          "hours": 4,
+          "status": "Resolved"
+        }
+      ],
+      "estimate": 19
+    },
+    {
+      "id": 66182,
+      "name": "Make questions appear in the correct order in acquired series and features info request e-mails",
+      "key": "CSCD-439",
+      "points": 3,
+      "status": "Resolved",
+      "tasks": [
+        {
+          "id": "66207",
+          "key": "CSCD-456",
+          "name": "Make email creation observe ordinal numbers for required field order",
+          "hours": 3,
+          "status": "Resolved"
+        },
+        {
+          "id": "66208",
+          "key": "CSCD-457",
+          "name": "Test question order in info request e-mail",
+          "hours": 1,
+          "status": "Resolved"
+        }
+      ],
+      "estimate": 4
+    },
+    {
+      "id": 66189,
+      "name": "Add release year into the dropdown for titles and put the year into the work order name for features.",
+      "key": "CSCD-442",
+      "points": 3,
+      "status": "Resolved",
+      "tasks": [
+        {
+          "id": "66212",
+          "key": "CSCD-461",
+          "name": "Add release year to display string in titles search drop-down",
+          "hours": 2,
+          "status": "Resolved"
+        },
+        {
+          "id": "66214",
+          "key": "CSCD-463",
+          "name": "Test for presence of release year in search drop-down and work order title",
+          "hours": 2,
+          "status": "Resolved"
+        },
+        {
+          "id": "66213",
+          "key": "CSCD-462",
+          "name": "Add release year to work order names",
+          "hours": 2,
+          "status": "Resolved"
+        }
+      ],
+      "estimate": 6
+    },
+    {
+      "id": 66344,
+      "name": "Preview & Send emails in Features is broken",
+      "key": "CSCD-492",
+      "status": "Resolved",
+      "tasks": [],
+      "estimate": 0
+    },
+    {
+      "id": 63859,
+      "name": "Users can select Edit Rights for a feature film",
+      "key": "CSCD-170",
+      "points": 5,
+      "status": "Open",
+      "tasks": [
+        {
+          "id": "66248",
+          "key": "CSCD-481",
+          "name": "Add edit rights required properties to Features",
+          "hours": 5,
+          "status": "Open"
+        },
+        {
+          "id": "66249",
+          "key": "CSCD-482",
+          "name": "Test edit rights",
+          "hours": 1,
+          "status": "Open"
+        }
+      ],
+      "estimate": 6
+    },
+    {
+      "id": 65367,
+      "name": "Switching distributors in options dropdown should clear out additional contacts.",
+      "key": "CSCD-348",
+      "points": 3,
+      "status": "Procurement Team In Progress",
+      "tasks": [
+        {
+          "id": "66210",
+          "key": "CSCD-459",
+          "name": "Make rules engine call removeAllRecipients when a distributor change is detected",
+          "hours": 4,
+          "status": "Resolved"
+        },
+        {
+          "id": "66209",
+          "key": "CSCD-458",
+          "name": "Implement removeRecipient and removeAllRecipients in conversations",
+          "hours": 4,
+          "status": "Resolved"
+        },
+        {
+          "id": "66211",
+          "key": "CSCD-460",
+          "name": "Test email list clearing on distributor change",
+          "hours": 2,
+          "status": "Open"
+        }
+      ],
+      "estimate": 10
+    },
+    {
+      "id": 65375,
+      "name": "Clicking Confirm Order packages data and gets it ready to send to Orion",
+      "key": "CSCD-351",
+      "points": 1,
+      "status": "Procurement Team In Progress",
+      "tasks": [
+        {
+          "id": "66243",
+          "key": "CSCD-479",
+          "name": "Get Chris to make work orders use metro to enqueue SQS messages on \"ORDER_CONFIRMED\" state change",
+          "hours": 2,
+          "status": "Open"
+        },
+        {
+          "id": "66245",
+          "key": "CSCD-480",
+          "name": "Test/verify SQS messages being sent from work orders",
+          "hours": 2,
+          "status": "Open"
+        }
+      ],
+      "estimate": 4
+    },
+    {
+      "id": 65376,
+      "name": "Build the glue that will tie WO tool and Orion together",
+      "key": "CSCD-352",
+      "points": 13,
+      "status": "Procurement Team In Progress",
+      "tasks": [
+        {
+          "id": "66229",
+          "key": "CSCD-471",
+          "name": "Settle on the payload for SQS messages",
+          "hours": 1,
+          "status": "Resolved"
+        },
+        {
+          "id": "66238",
+          "key": "CSCD-475",
+          "name": "Create REST client to talk to Orion bridge to create Orion orders",
+          "hours": 6,
+          "status": "Resolved"
+        },
+        {
+          "id": "66228",
+          "key": "CSCD-470",
+          "name": "Design/research what it would take to make WIG clustered",
+          "hours": 3,
+          "status": "Open"
+        },
+        {
+          "id": "66239",
+          "key": "CSCD-476",
+          "name": "Create rest client to fetch and update work orders",
+          "hours": 4,
+          "status": "Resolved"
+        },
+        {
+          "id": "66252",
+          "key": "CSCD-485",
+          "name": "Create deployment artifacts for the WIG",
+          "hours": 4,
+          "status": "Open"
+        },
+        {
+          "id": "66235",
+          "key": "CSCD-474",
+          "name": "Discussion about interacting with Work Orders via REST or SQS",
+          "hours": 3,
+          "status": "Resolved"
+        },
+        {
+          "id": "66233",
+          "key": "CSCD-473",
+          "name": "Create component to fetch and work with work orders",
+          "hours": 16,
+          "status": "Procurement Team In Progress"
+        },
+        {
+          "id": "66242",
+          "key": "CSCD-478",
+          "name": "Test Orion order creation",
+          "hours": 4,
+          "status": "Open"
+        },
+        {
+          "id": "66241",
+          "key": "CSCD-477",
+          "name": "Hand-off creation of Orion order",
+          "hours": 4,
+          "status": "Open"
+        },
+        {
+          "id": "66230",
+          "key": "CSCD-472",
+          "name": "Finish code that retrieves messages from SQS ",
+          "hours": 2,
+          "status": "Resolved"
+        }
+      ],
+      "estimate": 47
+    },
+    {
+      "id": 65650,
+      "name": "Time Box: User feedback & tweaks",
+      "key": "CSCD-393",
+      "points": 5,
+      "status": "Procurement Team In Progress",
+      "tasks": [
+        {
+          "id": "66200",
+          "key": "CSCD-449",
+          "name": "Reset required fields to desired set",
+          "hours": 4,
+          "status": "Ready"
+        },
+        {
+          "id": "66202",
+          "key": "CSCD-451",
+          "name": "Fix required property synchronization functionality",
+          "hours": 6,
+          "status": "Ready"
+        },
+        {
+          "id": "66206",
+          "key": "CSCD-455",
+          "name": "Hand-off and Test the required field union change",
+          "hours": 4,
+          "status": "Open"
+        },
+        {
+          "id": "66204",
+          "key": "CSCD-453",
+          "name": "Test question mappings (no mapping, not in e-mail)",
+          "hours": 1,
+          "status": "Open"
+        },
+        {
+          "id": "66199",
+          "key": "CSCD-448",
+          "name": "Remove notion of VersionType and replace with Episode Type and Feature Type required properties",
+          "hours": 3,
+          "status": "Ready"
+        },
+        {
+          "id": "66205",
+          "key": "CSCD-454",
+          "name": "Test required field reset to desired set",
+          "hours": 2,
+          "status": "Open"
+        },
+        {
+          "id": "66203",
+          "key": "CSCD-452",
+          "name": "Test version types -> req fields",
+          "hours": 1,
+          "status": "Open"
+        },
+        {
+          "id": "66201",
+          "key": "CSCD-450",
+          "name": "Make it so that required fields that don't have question mappings don't appear in the info request e-mail at all",
+          "hours": 3,
+          "status": "Ready"
+        }
+      ],
+      "estimate": 24
+    },
+    {
+      "id": 65893,
+      "name": "Notify users via Slack when a distributor replies to message",
+      "key": "CSCD-426",
+      "points": 5,
+      "status": "Open",
+      "tasks": [
+        {
+          "id": "66250",
+          "key": "CSCD-483",
+          "name": "Add hook to e-mail received to post slack notifications",
+          "hours": 5,
+          "status": "Open"
+        },
+        {
+          "id": "66251",
+          "key": "CSCD-484",
+          "name": "Test slack notifications",
+          "hours": 2,
+          "status": "Open"
+        }
+      ],
+      "estimate": 7
+    },
+    {
+      "id": 65949,
+      "name": "Work with distributor in Prod and make changes based on feedback",
+      "key": "CSCD-432",
+      "points": 5,
+      "status": "Open",
+      "tasks": [],
+      "estimate": 0
+    },
+    {
+      "id": 66183,
+      "name": "Fix Uncaught TypeError: Cannot read property 'iso6392Code' of undefined - on sending the email.",
+      "key": "CSCD-440",
+      "points": 3,
+      "status": "Procurement Team In Progress",
+      "tasks": [
+        {
+          "id": "66222",
+          "key": "CSCD-464",
+          "name": "Figure out how to reproduce the error",
+          "hours": 2,
+          "status": "Procurement Team In Progress"
+        },
+        {
+          "id": "66223",
+          "key": "CSCD-465",
+          "name": "Fix the iso language code problem",
+          "hours": null,
+          "status": "Open"
+        },
+        {
+          "id": "66224",
+          "key": "CSCD-466",
+          "name": "Test the iso language code null reference fix",
+          "hours": 2,
+          "status": "Open"
+        }
+      ],
+      "estimate": 4
+    },
+    {
+      "id": 66191,
+      "name": "Change the feature work order type so that step 2 is just a selection of the # of \"Feature Types\" that are being requested.",
+      "key": "CSCD-443",
+      "points": 5,
+      "status": "Open",
+      "tasks": [
+        {
+          "id": "66225",
+          "key": "CSCD-467",
+          "name": "UI work for create work order - specify one number rather than an arbitrary number of strings",
+          "hours": 4,
+          "status": "Open"
+        },
+        {
+          "id": "66226",
+          "key": "CSCD-468",
+          "name": "Edit form work to stub out specified number of order items rather than the named ones",
+          "hours": 1,
+          "status": "Open"
+        },
+        {
+          "id": "66227",
+          "key": "CSCD-469",
+          "name": "Test number of versions ",
+          "hours": 2,
+          "status": "Open"
+        }
+      ],
+      "estimate": 7
+    },
+    {
+      "id": 66365,
+      "name": "Features emails should contain correct formatting & information",
+      "key": "CSCD-493",
+      "status": "Open",
+      "tasks": [],
+      "estimate": 0
+    }
+  ],
+  "start": "10/Apr/17 3:19 PM",
+  "end": "21/Apr/17 3:19 PM",
+  "id": "890",
+  "points": 56,
+  "hours": 138
+}
