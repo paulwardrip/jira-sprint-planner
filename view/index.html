@@ -51,16 +51,23 @@
             </div>
             <div class="team"></div>
             <div class="row">
-                <div class="col-xs-1 col-xs-offset-11 grand-total"></div>
+                <div class="col-xs-1 col-xs-offset-10 low-total"></div>
+                <div class="col-xs-1 grand-total"></div>
+                <div class="col-xs-1 col-xs-offset-10 center">Low Estimate</div>
+                <div class="col-xs-1 center">Entered</div>
             </div>
         </div>
 
         <div id="current" class="well">
             <div id="sprint">
                 <div class="row">
-                    <div class="col-xs-8 name"><select id="sprint-selector"><option value="">Select a Sprint</option></select></div>
+                    <div class="col-xs-7 name"><select id="sprint-selector"><option value="">Select a Sprint</option></select></div>
+                    <div class="col-xs-1">
+                        <div class="col-xs-6 col-label">Points:</div><div class="col-xs-6 points"></div>
+                    </div>
                     <div class="col-xs-4">
-                        <div class="col-xs-2 col-label">Points:</div><div class="col-xs-2 points"></div>
+
+                        <div class="col-xs-2 col-label">High Est:</div><div class="col-xs-2 hours-high"></div>
                         <div class="col-xs-2 col-label">Estimate:</div><div class="col-xs-2 hours"></div>
                         <div class="col-xs-2 col-label">Remain:</div><div class="col-xs-2 remain"></div>
                     </div>

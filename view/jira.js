@@ -4,6 +4,9 @@ var auth;
 
 $(document).ready(function () {
 
+    function low(gt) { return Math.floor(gt*.85) }
+    function high(gt) { return Math.ceil(gt*1.15) }
+
     function statusColor(status, $elem) {
         switch (status) {
             case "Open":
@@ -43,6 +46,8 @@ $(document).ready(function () {
                 gt += parseInt($(this).html());
             });
             $(".grand-total").html(gt);
+
+            $(".low-total").html(low(gt));
         });
 
         $person.find(".day,.name").keyup(function () {
@@ -78,6 +83,7 @@ $(document).ready(function () {
             $("#sprint .name").html(data.name);
             $("#sprint .points").html(data.points);
             $("#sprint .hours").html(data.hours);
+            $("#sprint .hours-high").html(high(data.hours));
             $(".start").html(data.start);
             $(".end").html(data.end);
 
@@ -139,6 +145,7 @@ $(document).ready(function () {
 
             var gt = 0;
             $(".grand-total").html(0);
+            $(".low-total").html(0);
             var team = JSON.parse(localStorage.getItem("sprint" + sprint));
 
             if (team) {
@@ -162,6 +169,8 @@ $(document).ready(function () {
                     $(".team").append($person);
                 });
                 $(".grand-total").html(gt);
+
+                $(".low-total").html(low(gt));
             }
         });
     }

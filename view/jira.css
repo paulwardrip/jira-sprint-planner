@@ -8,7 +8,7 @@ body {
     font-family: Raleway, sans-serif;
 }
 
-.points, .hours, .remain, .day, .total, .grand-total {
+.points, .hours, .hours-high, .remain, .day, .total, .grand-total, .low-total {
     font-family: Exo, sans-serif;
     text-align: center;
 }
@@ -31,7 +31,7 @@ body {
     font-weight: 400;
 }
 
-#sprint .name, #sprint .points, #sprint .hours, #sprint .remain, .grand-total {
+#sprint .name, #sprint .points, #sprint .hours, .hours-high, #sprint .remain, .grand-total, .low-total {
     font-weight: 400;
     font-size: 24px;
 }
@@ -40,7 +40,7 @@ body {
     font-weight: 400;
 }
 
-.total, .grand-total {
+.total, .grand-total, .low-total {
     background-color: #f0f0f0;
 }
 
