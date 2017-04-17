@@ -3,6 +3,8 @@
   "dependencies": {
     "async": "^2.1.5",
     "body-parser": "^1.17.1",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "node-schedule": "^1.2.1"
   }
 }

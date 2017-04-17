@@ -3,3 +3,4 @@ node_modules
 view/bower_components
 logs/*
 .DS_Store
+burndowns.json

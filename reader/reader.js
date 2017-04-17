@@ -5,6 +5,9 @@ var JiraSprintView = function () {
     var fs = require('fs');
     var http = require('http');
     var async = require("async");
+    var schedule = require("node-schedule");
+    var moment = require("moment");
+    var burn = {};
 
     var savefile = false;
 
@@ -132,28 +135,64 @@ var JiraSprintView = function () {
         listIssuesInSprint(board, id, auth, function (result) {
             result.points = 0;
             result.hours = 0;
+            result.remain = 0;
 
             result.issues.forEach(function (i) {
                 result.points += (i.points ? i.points : 0);
+                i.remain = 0;
 
                 taskcalls.push((c)=>{
                     listTasksInIssue(i.id, auth, function (tasks) {
                         i.tasks = tasks;
                         i.estimate = 0;
                         tasks.forEach(function (t) {
+                            t.remain = 0;
+                            if (t.status != "Resolved" && t.status != "Closed" && t.status != "Ready") {
+                                t.remain = t.hours;
+                                result.remain += t.hours;
+                                i.remain += t.hours;
+                            }
                             i.estimate += t.hours;
                             result.hours += t.hours;
                         });
                         c();
-                    })
+                    });
                 });
             });
+
             async.parallel(taskcalls, ()=>{
-                file("sprint.json", JSON.stringify(result, null, 2));
+                if (!burn[id] && moment() < moment(result.end)) {
+                    burn[id] = {
+                        board: board,
+                        auth: auth,
+                        end: result.end,
+                        days: {}
+                    };
+
+                    burn[id].days[moment().format("YYYYMMDD")] = result.remain;
+
+                    file("burndowns.json", JSON.stringify(burn, null, 2));
+                }
+
                 callback(result);
             });
         })
     }
+
+    schedule.scheduleJob("0 /1 * * *", function () {
+       for (var idx in burn) {
+           if (moment(burn[idx].end) > moment()) {
+               viewSprint(burn[idx].board, idx, burn[idx].auth, function (spr) {
+                   burn[idx].days[moment().format("yyyyMMdd")] = spr.remain;
+                   file("burndowns.json", JSON.stringify(burn, null, 2));
+               })
+           }
+       }
+    });
+
+    fs.readFile("burndowns.json", null, (err, data)=>{
+        if (!err) burn = JSON.parse(data);
+    });
 
     return {
         listSprints: listSprints,

@@ -4,8 +4,8 @@ var auth;
 
 $(document).ready(function () {
 
-    function low(gt) { return Math.floor(gt*.85) }
-    function high(gt) { return Math.ceil(gt*1.15) }
+    function low(gt) { return Math.floor(gt*.9) }
+    function high(gt) { return Math.ceil(gt*1.1) }
 
     function statusColor(status, $elem) {
         switch (status) {
