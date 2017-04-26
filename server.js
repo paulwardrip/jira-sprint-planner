@@ -3,12 +3,14 @@ var express    = require('express');
 var app        = express();
 var bodyParser = require('body-parser');
 
+var config = require("./conf.json");
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use('/', express.static('view'));
 
-var port = process.env.PORT || 8420;
+var port = process.env.PORT || config.port;
 
 var router = express.Router();
 

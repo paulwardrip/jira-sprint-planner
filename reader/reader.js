@@ -1,7 +1,6 @@
 
 var JiraSprintView = function () {
-    var _jira = "atomtickets.turner.com";
-
+    var config = require("../conf.json");
     var fs = require('fs');
     var http = require('http');
     var async = require("async");
@@ -9,6 +8,7 @@ var JiraSprintView = function () {
     var moment = require("moment");
     var burn = {};
 
+    var _jira = config.jiraServer;
     var savefile = false;
 
     function page (path, auth, then) {
@@ -112,7 +112,7 @@ var JiraSprintView = function () {
                                 id: sub.id,
                                 key: sub.key,
                                 name: sub.fields.summary,
-                                hours: subdata ? subdata.fields.customfield_12500 : 0,
+                                hours: subdata ? subdata.fields[config.taskHourField] : 0,
                                 status: sub.fields.status.name
                             });
                             c();

@@ -1,0 +1,5 @@
+{
+  "jiraServer": "atomtickets.turner.com",
+  "taskHourField": "customfield_12500",
+  "port": 8420
+}
