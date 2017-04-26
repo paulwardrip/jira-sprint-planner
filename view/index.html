@@ -2,11 +2,15 @@
 <head>
     <title>JIRA Sprint Hours</title>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/tipsy/src/javascripts/jquery.tipsy.js"></script>
     <script src="jira.js"></script>
     <link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="bower_components/tipsy/src/stylesheets/tipsy.css" />
     <link type="text/css" rel="stylesheet" href="jira.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Exo:300,400" rel="stylesheet">
 </head>
 <body>
@@ -27,11 +31,19 @@
     </div>
 
     <div class="plan">
-        <div class="row dates">
-            <div class="col-xs-3 datelabel">Start Date</div>
-            <div class="col-xs-3 start"></div>
-            <div class="col-xs-3 datelabel">End Date</div>
-            <div class="col-xs-3 end"></div>
+        <div class="row dates well">
+            <div class="col-xs-2"><span class="app">Sprint Planner</span> for JIRA</div>
+            <div class="col-xs-6">
+                <div class="col-xs-3 datelabel">Start Date</div>
+                <div class="col-xs-3 start"></div>
+                <div class="col-xs-3 datelabel">End Date</div>
+                <div class="col-xs-3 end"></div>
+            </div>
+            <div class="col-xs-4">
+                <div class="col-xs-4 right"><span class="cursor" id="velocity-link">Velocity</span></div>
+                <div class="col-xs-4 right"><span class="cursor" id="burndown-link">Burndown</span></div>
+                <div class="col-xs-4 right"><span class="cursor" id="logout-link">Logout</span></div>
+            </div>
         </div>
 
         <div class="people" style="display: none">
@@ -50,24 +62,26 @@
                 <div class="col-xs-1" style="text-align: center"><button id="add-person">Add</button></div>
             </div>
             <div class="team"></div>
-            <div class="row">
-                <div class="col-xs-1 col-xs-offset-10 low-total"></div>
-                <div class="col-xs-1 grand-total"></div>
-                <div class="col-xs-1 col-xs-offset-10 center">Low Estimate</div>
-                <div class="col-xs-1 center">Entered</div>
-            </div>
+        </div>
+
+        <div class="row hourscompare center">
+            <div class="col-xs-2">Task Estimates</div>
+            <div class="col-xs-1 well hours hour-box"></div>
+            <div class="col-xs-2">Task Worst Case Estimate</div>
+            <div class="col-xs-1 well hours-high hour-box"></div>
+            <div class="col-xs-2">Team Hours Worst Case</div>
+            <div class="col-xs-1 well hour-box low-total"></div>
+            <div class="col-xs-2">Team Availability</div>
+            <div class="col-xs-1 well hour-box grand-total"></div>
         </div>
 
         <div id="current" class="well">
             <div id="sprint">
                 <div class="row">
-                    <div class="col-xs-7 name"><select id="sprint-selector"><option value="">Select a Sprint</option></select></div>
-                    <div class="col-xs-1">
-                        <div class="col-xs-6 col-label">Points:</div><div class="col-xs-6 points"></div>
-                    </div>
-                    <div class="col-xs-4">
+                    <div class="col-xs-8 name"><select id="sprint-selector"><option value="">Select a Sprint</option></select></div>
 
-                        <div class="col-xs-2 col-label">High Est:</div><div class="col-xs-2 hours-high"></div>
+                    <div class="col-xs-4">
+                        <div class="col-xs-2 col-label">Points:</div><div class="col-xs-2 points"></div>
                         <div class="col-xs-2 col-label">Estimate:</div><div class="col-xs-2 hours"></div>
                         <div class="col-xs-2 col-label">Remain:</div><div class="col-xs-2 remain"></div>
                     </div>

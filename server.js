@@ -26,6 +26,16 @@ router.get('/sprints/:board', function(req, res) {
     });
 });
 
+router.get('/velocity/:board', function(req, res) {
+    jira.velocity(req.params.board, req.query.auth, function (velocity) {
+        res.json(velocity);
+    });
+});
+
+router.get('/burndown/:sprint', function(req, res) {
+    res.json(jira.burndown(req.params.sprint));
+});
+
 app.use('/api', router);
 
 app.listen(port);

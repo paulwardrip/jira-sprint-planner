@@ -112,7 +112,7 @@ var JiraSprintView = function () {
                                 id: sub.id,
                                 key: sub.key,
                                 name: sub.fields.summary,
-                                hours: subdata.fields.customfield_12500,
+                                hours: subdata ? subdata.fields.customfield_12500 : 0,
                                 status: sub.fields.status.name
                             });
                             c();
@@ -161,11 +161,12 @@ var JiraSprintView = function () {
             });
 
             async.parallel(taskcalls, ()=>{
-                if (!burn[id] && moment() < moment(result.end)) {
+                var resend = moment(result.end, "DD/MMM/YY");
+                if (!burn[id] && moment() < resend) {
                     burn[id] = {
                         board: board,
                         auth: auth,
-                        end: result.end,
+                        end: resend.format("MM/DD/YYYY"),
                         days: {}
                     };
 
@@ -179,26 +180,69 @@ var JiraSprintView = function () {
         })
     }
 
-    schedule.scheduleJob("0 /1 * * *", function () {
-       for (var idx in burn) {
-           if (moment(burn[idx].end) > moment()) {
-               viewSprint(burn[idx].board, idx, burn[idx].auth, function (spr) {
-                   burn[idx].days[moment().format("yyyyMMdd")] = spr.remain;
-                   file("burndowns.json", JSON.stringify(burn, null, 2));
-               })
-           }
-       }
-    });
+    function velocity(board, auth, callback) {
+        var vel = [];
+        var velf = [];
+        listSprints(board, auth, function (sprints) {
+
+            sprints.forEach(function (sprint) {
+
+                var f = function(c) {
+                    listIssuesInSprint(board, sprint.id, auth, function (result) {
+                        sprint.points = 0;
+
+                        result.issues.forEach(function (i) {
+                            sprint.points += (i.points ? i.points : 0);
+                        });
+
+                        vel.push(sprint);
+                        c();
+                    });
+                };
+                velf.push(f);
+            });
+
+            async.parallel(velf, ()=> {
+                vel.sort (function (a, b) {
+                   return (a.id - b.id);
+                });
+                callback(vel)
+            });
+        });
+    }
+
+    function burndown(sprint) {
+        return burn[sprint];
+    }
+
+    function saveburndowns() {
+        for (var idx in burn) {
+            var today = moment();
+            var end = moment(burn[idx].end, "MM/DD/YYYY");
+            if (today.isBefore(end) || today.isSame(end, 'day')) {
+                viewSprint(burn[idx].board, idx, burn[idx].auth, function (spr) {
+                    burn[idx].days[today.format("YYYYMMDD")] = spr.remain;
+                    file("burndowns.json", JSON.stringify(burn, null, 2));
+                })
+            }
+        }
+    }
 
     fs.readFile("burndowns.json", null, (err, data)=>{
         if (!err) burn = JSON.parse(data);
+        saveburndowns();
+
+        schedule.scheduleJob("0 */1 * * *", saveburndowns);
     });
+
 
     return {
         listSprints: listSprints,
         listIssuesInSprint: listIssuesInSprint,
         listTasksInIssue: listTasksInIssue,
-        viewSprint: viewSprint
+        viewSprint: viewSprint,
+        velocity: velocity,
+        burndown: burndown
     }
 }();
 
